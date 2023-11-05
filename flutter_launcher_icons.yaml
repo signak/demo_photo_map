@@ -1,0 +1,9 @@
+flutter_icons:
+  ios: false
+  android: false
+
+  web:
+    generate: true
+    image_path: "assets/image/logo_transparent.png"
+    background_color: "#FFFFFF"
+    theme_color: "#695F00"

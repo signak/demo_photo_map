@@ -1,1 +1,3 @@
-# demo_photo_map
+# photo_share_capp
+
+Demo: photo sharing on map

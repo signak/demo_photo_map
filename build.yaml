@@ -1,0 +1,26 @@
+targets:
+  $default:
+    builders:
+      source_gen|combining_builder:
+        options:
+          build_extensions:
+            '^lib/{{}}.dart': 'lib/generated/{{}}.g.dart'
+      freezed:
+        generate_for:
+          include:
+            - 'lib/core/util/result.dart'
+            - 'lib/domain/auth/authorization_info.dart'
+            - 'lib/infra/auth/firebase_auth_state.dart'
+            - 'lib/presentation/widget/map/map_control_state.dart'
+            - 'lib/domain/shared_photo.dart'
+            - 'lib/domain/map/map_tile_info.dart'
+        options:
+          build_extensions:
+            '^lib/{{}}.dart': 'lib/generated/{{}}.freezed.dart'
+      # isar_generator:
+      #   generate_for:
+      #     include:
+      #       - 'lib/infra/image_cache/isar_cached_image.dart'
+      #   options:
+      #     build_extensions:
+      #       '^lib/{{}}.dart': 'lib/generated/{{}}.g.dart'

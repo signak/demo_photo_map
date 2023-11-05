@@ -1,0 +1,36 @@
+flutter_native_splash:
+  color: "#645F41"
+  #background_image: "assets/background.png"
+
+  image: assets/image/logo_transparent.png
+
+  #branding: assets/dart.png
+  #branding_mode: bottom
+
+  color_dark: "#4C472B"
+  #background_image_dark: "assets/dark-background.png"
+  image_dark: assets/image/logo_transparent.png
+  #branding_dark: assets/dart_dark.png
+
+  # Android 12 handles the splash screen differently than previous versions.  Please visit
+  # https://developer.android.com/guide/topics/ui/splash-screen
+  # Following are Android 12 specific parameter.
+  android_12:
+    image: assets/image/logo_transparent_android12.png
+    color: "#645F41"
+
+    # App icon background color.
+    #icon_background_color: "#111111"
+
+    #branding: assets/dart.png
+
+    color_dark: "#4C472B"
+    #icon_background_color_dark: "#eeeeee"
+
+  # To hide the notification bar, use the fullscreen parameter.  Has no effect in web since web
+  # has no notification bar.  Defaults to false.
+  # NOTE: Unlike Android, iOS will not automatically show the notification bar when the app loads.
+  #       To show the notification bar, add the following code to your Flutter app:
+  #       WidgetsFlutterBinding.ensureInitialized();
+  #       SystemChrome.setEnabledSystemUIOverlays([SystemUiOverlay.bottom, SystemUiOverlay.top]);
+  #fullscreen: true
